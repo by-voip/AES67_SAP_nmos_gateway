@@ -8,11 +8,14 @@ and from there will serve an NMOS node API on the port specified in the config.j
 The service will present one NODE which represents the entire Dante VLAN the service runs on, and then based on parsing SDP's will create
 an NMOS device under this node for every dante device on the network, and for every device, will create sources, flows and senders.
 
-The service will register itself with any IS-04 registration API, and from there any NMOS campatible control system will be able to treat AES67 streams
-from dante devices like any other NMOS sender.
+The service will register itself with any IS-04 registration API, and from there any NMOS campatible control system will be able to treat AES67 streams from dante devices like any other NMOS sender.
 
+To use just run "npm install" and then "node server.js"
+
+You will need to have git installed before running "npm install" due to an external dependency of the nmos-ledger package.
 
 Written in Javascript and tested with NODE.js v10.13.0.
+Dockerfile included but this is untested.
 
 The IS-04 implementation built on top of nmos-ledger from Streampunkd:
 https://github.com/Streampunk/ledger
