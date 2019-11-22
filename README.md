@@ -10,6 +10,8 @@ an NMOS device under this node for every dante device on the network, and for ev
 
 The service will register itself with any IS-04 registration API, and from there any NMOS campatible control system will be able to treat AES67 streams from dante devices like any other NMOS sender.
 
+Note that the intention of this service is to enumerate senders based on discovered AES67 flows, a complimentary service is being made that can act more akin to a node registration API, in that you can send it an array of SDP's and it will in turn annouce those so that AES67 flows can be detected and patched in dante controller.
+
 To use just run "npm install" and then "node server.js"
 
 You will need to have git installed before running "npm install" due to an external dependency of the nmos-ledger package.
