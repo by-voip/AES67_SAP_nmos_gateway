@@ -1,0 +1,19 @@
+{
+  "name": "dante_nmos_gateway",
+  "version": "1.0.0",
+  "description": "NMOS Node API implementation for AES67 streams from dante devices announced via SAP",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Onions",
+  "license": "ISC",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.17.1",
+    "nmos-ledger": "^1.0.20",
+    "sdp-transform": "^2.13.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {}
+}
